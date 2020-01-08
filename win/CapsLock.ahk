@@ -341,16 +341,41 @@ CapsLock & g:: Send, {AppsKey}                                       ;|
 ;                        CapsLock Self Defined Area                  ;|
 ;-----------------------------------o---------------------------------o
 ;                     CapsLock + d  |  ditto hotkey           		 ;|
-;                     CapsLock + f  |  Everything hotkey			 ;|
-;                     CapsLock + e  |  Open Search Engine            ;|
-;                     CapsLock + r  |  Open Shell                    ;|
+;                     CapsLock + c  |  Everything hotkey			 ;|
 ;                     CapsLock + t  |  Open Text Editor              ;|
 ;-----------------------------------o---------------------------------o
 CapsLock & d:: Send, ^!+d                                            ;|
-CapsLock & c:: Send, ^!+c											 ;|
-CapsLock & f:: Send, !f                                              ;|
-CapsLock & e:: Run http://cn.bing.com/                               ;|
-CapsLock & r:: Run Powershell                                        ;|
+CapsLock & c:: Send, ^!+c											 ;|                                            ;|
+CapsLock & e::                                                       ;|
+	if GetKeyState("alt") = 0                                            ;|
+	{                                                                    ;|
+		Send, {{}{}}                                                         ;|
+	}                                                                    ;|
+	else {                                                               ;|
+		Send, {{}{}}                                                     ;|
+		return                                                           ;|
+	}                                                                    ;|
+	return 
+CapsLock & f::                                                       ;|
+	if GetKeyState("alt") = 0                                            ;|
+	{                                                                    ;|
+		Send, ()                                                         ;|
+	}                                                                    ;|
+	else {                                                               ;|
+		Send, []                                                      ;|
+		return                                                           ;|
+	}                                                                    ;|
+	return 
+CapsLock & r::                                                       ;|
+	if GetKeyState("alt") = 0                                            ;|
+	{                                                                    ;|
+		Send, =                                                         ;|
+	}                                                                    ;|
+	else {                                                               ;|
+		Send, {+}                                                      ;|
+		return                                                           ;|
+	}                                                                    ;|
+	return 
 CapsLock & t:: Run C:\Program Files (x86)\Notepad++\notepad++.exe    ;|
 ;---------------------------------------------------------------------o
 
