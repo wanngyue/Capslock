@@ -51,7 +51,7 @@
                         "manipulators": [
 	                       {
                                 "from": {
-                                    "key_code": "e",
+                                    "key_code": "f",
                                     "modifiers": {
                                         "mandatory": [
                                             "right_command",
@@ -64,35 +64,19 @@
                                 "to": [
                                     {
                                         "key_code": "5"
+                                    },
+                                    {
+                                        "key_code": "hyphen"
                                     }
                                 ],
                                 "type": "basic"
                             },
                             {
                                 "from": {
-                                    "key_code": "e",
+                                    "key_code": "f",
                                     "modifiers": {
                                         "mandatory": [
 	                                        "left_alt",
-                                            "right_command",
-                                            "right_control",
-                                            "right_shift",
-                                            "right_option"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "hyphen"
-                                    }
-                                ],
-                                "type": "basic"
-                            }, 
-                            {
-                                "from": {
-                                    "key_code": "r",
-                                    "modifiers": {
-                                        "mandatory": [
                                             "right_command",
                                             "right_control",
                                             "right_shift",
@@ -106,24 +90,7 @@
                                         "modifiers": [
                                             "left_alt"
                                         ]
-                                    }
-                                ],
-                                "type": "basic"
-                            },
-                            {
-                                "from": {
-                                    "key_code": "r",
-                                    "modifiers": {
-                                        "mandatory": [
-	                                        "left_alt",
-                                            "right_command",
-                                            "right_control",
-                                            "right_shift",
-                                            "right_option"
-                                        ]
-                                    }
-                                },
-                                "to": [
+                                    },
                                     {
                                         "key_code": "hyphen",
                                         "modifiers": [
@@ -133,10 +100,10 @@
                                     }
                                 ],
                                 "type": "basic"
-                            },
+                            }, 
                             {
                                 "from": {
-                                    "key_code": "f",
+                                    "key_code": "e",
                                     "modifiers": {
                                         "mandatory": [
                                             "right_command",
@@ -152,13 +119,40 @@
                                         "modifiers": [
                                             "left_alt"
                                         ]
+                                    },
+                                    {
+                                        "key_code": "equal_sign",
+                                        "modifiers": [
+                                            "left_alt"
+                                        ]
                                     }
+
                                 ],
                                 "type": "basic"
-                            },  
+                            },
                             {
                                 "from": {
-                                    "key_code": "f",
+                                    "key_code": "r",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "right_command",
+                                            "right_control",
+                                            "right_shift",
+                                            "right_option"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "equal_sign"
+                                    }
+
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "from": {
+                                    "key_code": "r",
                                     "modifiers": {
                                         "mandatory": [
 	                                        "left_alt",
@@ -169,16 +163,16 @@
                                         ]
                                     }
                                 },
-                                "to": [
+                                "to": 
                                     {
                                         "key_code": "equal_sign",
                                         "modifiers": [
-                                            "left_alt"
+                                            "left_shift"
                                         ]
                                     }
                                 ],
                                 "type": "basic"
-                            },  
+                            },
                             {
                                 "from": {
                                     "key_code": "j",
